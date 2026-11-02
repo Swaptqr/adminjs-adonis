@@ -4,10 +4,6 @@ import { type BelongsTo } from '@adonisjs/lucid/types/relations'
 
 import Organization from './organization.js'
 
-enum Gender {
-  Male = 'M',
-  Female = 'F'
-}
 export default class Person extends BaseModel {
   public static table = 'persons'
 
@@ -33,7 +29,7 @@ export default class Person extends BaseModel {
   public isActive: boolean = true
 
   @column({ columnName: 'organization_id' })
-  declare organizationId: number;
+  declare organizationId: number
 
   @belongsTo(() => Organization, { foreignKey: 'organization_id' })
   declare organization: BelongsTo<typeof Organization>

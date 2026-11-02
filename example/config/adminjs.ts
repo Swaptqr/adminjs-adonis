@@ -1,4 +1,4 @@
-import { AdminJSProviderConfig, LucidResource } from '@adminjs/adonis'
+import { type AdminJSProviderConfig, LucidResource } from '@adminjs/adonis'
 
 import componentLoader from '../app/admin/component_loader.js'
 import authProvider from '../app/admin/auth.js'

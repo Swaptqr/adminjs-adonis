@@ -1,4 +1,4 @@
-import { DefaultAuthProvider, DefaultAuthenticatePayload } from 'adminjs'
+import { DefaultAuthProvider, type DefaultAuthenticatePayload } from 'adminjs'
 
 import componentLoader from './component_loader.js'
 

@@ -1,3 +1,4 @@
+import { indexEntities } from '@adonisjs/core'
 import { defineConfig } from '@adonisjs/core/app'
 
 export default defineConfig({
@@ -33,7 +34,7 @@ export default defineConfig({
     {
       file: () => import('@adminjs/adonis/adminjs_provider'),
       environment: ['web'],
-    }
+    },
   ],
 
   /*
@@ -58,16 +59,29 @@ export default defineConfig({
   tests: {
     suites: [
       {
-        files: ['tests/unit/**/*.spec(.ts|.js)'],
+        files: ['tests/unit/**/*.spec.{ts,js}'],
         name: 'unit',
         timeout: 2000,
       },
       {
-        files: ['tests/functional/**/*.spec(.ts|.js)'],
+        files: ['tests/functional/**/*.spec.{ts,js}'],
         name: 'functional',
         timeout: 30000,
       },
     ],
     forceExit: false,
+  },
+
+  /*
+  |--------------------------------------------------------------------------
+  | Hooks
+  |--------------------------------------------------------------------------
+  |
+  | Assembler hooks are executed by the Assembler dev tool during various
+  | stages. The "indexEntities" hook is required by AdonisJS v7.
+  |
+  */
+  hooks: {
+    init: [indexEntities()],
   },
 })
