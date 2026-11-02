@@ -76,9 +76,6 @@
       "optional": true
     }
   },
-  "eslintConfig": {
-    "extends": "@adonisjs/eslint-config/app"
-  },
   "prettier": "@adonisjs/prettier-config",
   "tsup": {
     "entry": [
