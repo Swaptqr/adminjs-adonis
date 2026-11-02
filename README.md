@@ -16,6 +16,14 @@ The installation and configuration instructions are maintained in the official d
 
 https://docs.adminjs.co/installation/plugins/adonis
 
+## AdonisJS v7 compatibility
+
+Version 2.x of this package targets **AdonisJS v7** (`@adonisjs/core` ^7, `@adonisjs/session` ^8 and, optionally, `@adonisjs/lucid` ^22) and requires **Node.js 24 or later**. It also requires `adminjs` >= 7.8.10, since older AdminJS builds use an import syntax that Node.js 22+ no longer supports.
+
+If your application still runs on AdonisJS v6, stay on the 1.x releases of `@adminjs/adonis`.
+
+See [CHANGELOG.md](CHANGELOG.md) for details.
+
 ## Discord Community
 
 [Join the community](https://adminjs.page.link/discord) to get help and be inspired.
