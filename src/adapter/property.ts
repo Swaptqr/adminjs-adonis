@@ -1,7 +1,7 @@
-import { BaseProperty, PropertyType } from 'adminjs'
+import { BaseProperty, type PropertyType } from 'adminjs'
 
-import { LucidColumnMetadata } from '../types.js'
-import { TypeConverter, databaseTypeToAdminType } from './type_converter.js'
+import { type LucidColumnMetadata } from '../types.js'
+import { type TypeConverter, databaseTypeToAdminType } from './type_converter.js'
 
 export default class Property extends BaseProperty {
   protected typeConverter: TypeConverter
@@ -71,7 +71,6 @@ export default class Property extends BaseProperty {
     }
 
     const type = this.typeConverter(this.columnOptions.databaseColumn.data_type)
-    // eslint-disable-next-line no-console
     if (!type) {
       console.warn(`Unhandled type: ${this.columnOptions.databaseColumn.data_type}`)
     }

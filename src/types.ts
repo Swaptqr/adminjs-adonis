@@ -1,9 +1,17 @@
-import { HttpError, MiddlewareFn, ParsedNamedMiddleware } from '@adonisjs/core/types/http'
-import { ModelColumnOptions } from '@adonisjs/lucid/types/model'
-import { RelationshipsContract } from '@adonisjs/lucid/types/relations'
-import { AllowedSessionValues, SessionConfig, SessionData } from '@adonisjs/session/types'
-import { AdminJSOptions, BaseAuthProvider } from 'adminjs'
-import { Column } from 'knex-schema-inspector/dist/types/column.js'
+import {
+  type HttpError,
+  type MiddlewareFn,
+  type ParsedNamedMiddleware,
+} from '@adonisjs/core/types/http'
+import { type ModelColumnOptions } from '@adonisjs/lucid/types/model'
+import { type RelationshipsContract } from '@adonisjs/lucid/types/relations'
+import {
+  type AllowedSessionValues,
+  type SessionConfig,
+  type SessionData,
+} from '@adonisjs/session/types'
+import { type AdminJSOptions, type BaseAuthProvider } from 'adminjs'
+import { type Column } from 'knex-schema-inspector/dist/types/column.js'
 
 export interface BaseAuthOptions {
   enabled: boolean

@@ -1,5 +1,5 @@
-import { ApplicationService } from '@adonisjs/core/types'
-import AdminJS, { AdminJSOptions } from 'adminjs'
+import { type ApplicationService } from '@adonisjs/core/types'
+import AdminJS, { type AdminJSOptions } from 'adminjs'
 import SchemaInspector from 'knex-schema-inspector'
 import db from '@adonisjs/lucid/services/db'
 import { RuntimeException } from '@adonisjs/core/exceptions'
@@ -7,8 +7,8 @@ import { RuntimeException } from '@adonisjs/core/exceptions'
 import AdminJSRouter from '../src/plugin/router.js'
 import Resource from '../src/adapter/resource.js'
 import Database from '../src/adapter/database.js'
-import { AdminJSProviderConfig } from '../src/types.js'
-import LucidResource from '../src/adapter/lucid_resource.js'
+import { type AdminJSProviderConfig } from '../src/types.js'
+import type LucidResource from '../src/adapter/lucid_resource.js'
 
 export default class AdminJSProvider {
   constructor(protected app: ApplicationService) {}

@@ -1,7 +1,7 @@
-import { LucidModel } from '@adonisjs/lucid/types/model'
-import { SchemaInspector } from 'knex-schema-inspector/dist/types/schema-inspector.js'
+import { type LucidModel } from '@adonisjs/lucid/types/model'
+import { type SchemaInspector } from 'knex-schema-inspector/dist/types/schema-inspector.js'
 
-import { LucidColumnMetadata, LucidResourceMetadata } from '../types.js'
+import { type LucidColumnMetadata, type LucidResourceMetadata } from '../types.js'
 
 export default class LucidResource {
   protected metadata: LucidResourceMetadata = {

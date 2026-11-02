@@ -1,4 +1,4 @@
-import { PropertyType } from 'adminjs'
+import { type PropertyType } from 'adminjs'
 
 export type TypeConverter = (columnType: string) => PropertyType
 
@@ -56,7 +56,6 @@ export const databaseTypeToAdminType: TypeConverter = (columnType: string) => {
     case 'uuid':
       return 'uuid'
     default:
-      // eslint-disable-next-line no-console
       console.warn(`Unexpected type: ${columnType} fallback to string`)
       return 'string'
   }

@@ -1,7 +1,7 @@
-import { BaseRecord, BaseResource, Filter, flat } from 'adminjs'
-import { LucidModel, ModelQueryBuilderContract } from '@adonisjs/lucid/types/model'
+import { BaseRecord, BaseResource, type Filter, flat } from 'adminjs'
+import { type LucidModel, type ModelQueryBuilderContract } from '@adonisjs/lucid/types/model'
 
-import LucidResource from './lucid_resource.js'
+import type LucidResource from './lucid_resource.js'
 import Property from './property.js'
 
 class Resource extends BaseResource {

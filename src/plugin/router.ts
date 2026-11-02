@@ -1,10 +1,11 @@
 import path from 'node:path'
-import { HttpContext } from '@adonisjs/core/http'
+import { type HttpContext } from '@adonisjs/core/http'
 import router from '@adonisjs/core/services/router'
-import AdminJS, { Router as AdminRouter, BaseAuthProvider, RouterType } from 'adminjs'
-import { SessionData } from '@adonisjs/session/types'
+import type AdminJS from 'adminjs'
+import { Router as AdminRouter, type BaseAuthProvider, type RouterType } from 'adminjs'
+import { type SessionData } from '@adonisjs/session/types'
 
-import { AdminJSProviderConfig, EnabledAuthOptions, SessionI } from '../types.js'
+import { type AdminJSProviderConfig, type EnabledAuthOptions, type SessionI } from '../types.js'
 import { checkSession } from './middlewares.js'
 import { normalizePath, parsePathParams } from './utils/path_utils.js'
 
